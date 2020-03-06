@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @EnableTransactionManagement
 @Configuration
-@MapperScan("com.lim.test.mybatisplus")
+@MapperScan("com.lim.bms")
 public class MybatisPlusConfig {
 
     @Bean

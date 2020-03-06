@@ -2,23 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.lim.bms.service</groupId>
-        <artifactId>system</artifactId>
+        <artifactId>bms-microservice</artifactId>
+        <groupId>com.lim.bms.parent</groupId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
+    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>system-base</artifactId>
-    <description>后台管理-基础包</description>
+    <groupId>com.lim.bms.service</groupId>
+    <artifactId>commons</artifactId>
+    <description>通用工具</description>
 
     <dependencies>
-        <dependency>
-            <groupId>com.lim.bms.service</groupId>
-            <artifactId>commons</artifactId>
-            <version>${module.version}</version>
-            <scope>compile</scope>
-        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -28,5 +23,13 @@
             <artifactId>fastjson</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
     </dependencies>
 </project>
