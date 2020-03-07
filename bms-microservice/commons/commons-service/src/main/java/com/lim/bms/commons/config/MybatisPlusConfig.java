@@ -1,4 +1,4 @@
-package com.lim.bms.sys.config;
+package com.lim.bms.commons.config;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.pagination.optimize.JsqlParserCountOptimize;
@@ -8,6 +8,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
+ * mybatisplus 配置
+ * 分页查询配置
  * @author Lim
  * @date 2020/2/11
  */

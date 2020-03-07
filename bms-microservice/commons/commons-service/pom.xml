@@ -5,20 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.lim.bms.service</groupId>
-        <artifactId>system</artifactId>
+        <artifactId>commons</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>system-base</artifactId>
-    <description>后台管理-基础包</description>
+    <artifactId>commons-service</artifactId>
+    <description>服务service通用工具</description>
 
     <dependencies>
-        <dependency>
-            <groupId>com.lim.bms.service</groupId>
-            <artifactId>commons-base</artifactId>
-            <version>${module.version}</version>
-            <scope>compile</scope>
-        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -27,6 +21,7 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
         </dependency>
+
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
@@ -36,4 +31,5 @@
             <artifactId>springfox-swagger2</artifactId>
         </dependency>
     </dependencies>
+
 </project>
