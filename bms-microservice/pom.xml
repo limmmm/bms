@@ -19,6 +19,7 @@
 
         <spring.cloud.version>Edgware.SR5</spring.cloud.version>
         <springframework.version>2.2.2.RELEASE</springframework.version>
+        <junit.version>5.5.2</junit.version>
         <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
         <log4j.version>1.2.17</log4j.version>
         <fastjson.version>1.2.62</fastjson.version>
@@ -48,6 +49,11 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
                 <version>${springframework.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>junit-jupiter-api</artifactId>
+                <groupId>org.junit.jupiter</groupId>
+                <version>${junit.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>

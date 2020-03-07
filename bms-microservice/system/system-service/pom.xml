@@ -56,7 +56,15 @@
                     <artifactId>byte-buddy</artifactId>
                     <groupId>net.bytebuddy</groupId>
                 </exclusion>
+                <exclusion>
+                    <artifactId>junit-jupiter-api</artifactId>
+                    <groupId>org.junit.jupiter</groupId>
+                </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <artifactId>junit-jupiter-api</artifactId>
+            <groupId>org.junit.jupiter</groupId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
