@@ -1,4 +1,4 @@
-package com.lim.bms.sys;
+package com.lim.bms;
 
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.generator.AutoGenerator;

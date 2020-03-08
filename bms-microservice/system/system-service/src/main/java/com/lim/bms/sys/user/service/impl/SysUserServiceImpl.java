@@ -25,7 +25,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
     @Override
     public IPage<SysUser> pageCondition(SysUserPageDto pageDto) {
         QueryWrapper<SysUser> qw = new QueryWrapper<>();
-        qw.lambda().eq(SysUser::getAccount, pageDto.getAccount());
+//        qw.lambda().eq(SysUser::getAccount, pageDto.getAccount());
         IPage<SysUser> rs = baseMapper.selectPage(pageDto, qw);
         return rs;
     }

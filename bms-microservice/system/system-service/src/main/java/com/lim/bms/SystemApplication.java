@@ -1,4 +1,4 @@
-package com.lim.bms.sys;
+package com.lim.bms;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

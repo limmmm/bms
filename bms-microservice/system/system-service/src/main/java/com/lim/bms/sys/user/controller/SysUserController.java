@@ -2,6 +2,9 @@ package com.lim.bms.sys.user.controller;
 
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.lim.bms.commons.result.ResultAssert;
+import com.lim.bms.commons.result.ResultVO;
+import com.lim.bms.commons.result.ResultVOUtil;
 import com.lim.bms.sys.user.entity.SysUser;
 import com.lim.bms.sys.user.module.dto.SysUserPageDto;
 import com.lim.bms.sys.user.service.ISysUserService;
@@ -32,8 +35,9 @@ public class SysUserController {
      * @return List<User>
      */
     @GetMapping("/page")
-    public IPage<SysUser> page(SysUserPageDto pageDto) {
-        return sysUserService.pageCondition(pageDto);
+    public ResultVO<IPage<SysUser>> page(SysUserPageDto pageDto) {
+//        ResultAssert.error(false);
+        return ResultVOUtil.success(sysUserService.pageCondition(pageDto));
     }
 
 
