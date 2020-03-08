@@ -2,6 +2,7 @@ package com.lim.bms.commons.database;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
@@ -14,6 +15,7 @@ import java.time.LocalDateTime;
  * @date 2020/3/5
  */
 @Data
+@ApiModel(value = "数据库通用字段")
 public class BaseEntity implements Serializable {
 
     @ApiModelProperty(value = "主键")
