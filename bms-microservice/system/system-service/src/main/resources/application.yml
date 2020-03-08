@@ -4,6 +4,8 @@ server:
     context-path: /system
 
 spring:
+  jackson:
+    default-property-inclusion: non_null
   datasource:
     driver-class-name: com.p6spy.engine.spy.P6SpyDriver
     url: jdbc:p6spy:mysql://192.168.40.128:3307/bms?characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&zeroDateTimeBehavior=convertToNull
